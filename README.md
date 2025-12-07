@@ -284,17 +284,3 @@ Additional files:
 * scikit-learn for TF-IDF
 * rank-bm25 for BM25 scoring
 
----
-
-# 🎯 11. Summary
-
-This project demonstrates:
-
-* A complete IR pipeline
-* Lexical + semantic retrieval
-* A hybrid RRF ranking method
-* Real IR evaluation metrics
-* An interactive notebook UI
-* Modular, readable, research-grade code
-
-All required components are fully implemented and documented.
