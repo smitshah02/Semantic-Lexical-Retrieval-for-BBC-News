@@ -26,7 +26,14 @@ def extract_title_and_text(file_path: Path) -> tuple:
     return title, body
 
 def build_corpus(src_dir: str, out_csv: str):
-    #Walk through BBC folder structure and create normalized CSV.
+    """
+    Build a normalized article-level corpus from the raw BBC news folders.
+
+    This walks the category subfolders under BBC folder, extracts titles and
+    full article text, assigns a unique document ID and category label, and
+    writes the result to `bbc_corpus` as a CSV file.
+    """
+
     
     setup_logging()
     src_path = Path(src_dir)

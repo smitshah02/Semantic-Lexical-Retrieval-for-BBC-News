@@ -1,3 +1,9 @@
+"""
+Package initializer for the Semantic Lexical Retrieval project.
+
+This module re-exports the main retriever classes so they can be imported
+directly from `src` as a small convenience API.
+"""
 
 __version__ = "1.0.0"
 __author__ = "Your Name"

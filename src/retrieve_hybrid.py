@@ -1,3 +1,12 @@
+"""
+    Hybrid retriever that combines lexical and semantic rankings using RRF.
+
+    Wraps one or more base retrievers (e.g., TF-IDF, BM25, semantic) and
+    fuses their ranked lists with reciprocal rank fusion to produce a more
+    robust final ranking for each query.
+"""
+
+
 from typing import List, Tuple, Dict
 from collections import defaultdict
 

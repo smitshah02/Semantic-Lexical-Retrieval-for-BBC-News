@@ -1,3 +1,7 @@
+"""
+    Read a JSONL file and return a list of parsed records.
+"""
+
 import json
 import logging
 import re

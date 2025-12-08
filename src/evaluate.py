@@ -1,3 +1,11 @@
+"""
+    Evaluate one or more retrieval modes using standard IR metrics.
+
+    Loads queries and relevance judgments from `queries.tsv` and `qrels.tsv`,
+    runs the selected retrieval modes against the index in `artifacts` folder,
+    and computes Precision@k, Recall@k, and nDCG@k for each query and mode.
+"""
+
 import argparse
 import logging
 from pathlib import Path

@@ -14,6 +14,13 @@ def build_embeddings(
     batch_size: int = 32,
     use_faiss: bool = False
 ):
+    """
+    Encode chunk texts into dense semantic embeddings using a transformer model.
+
+    Loads chunks from `bbc_chunks.jsonl`, computes embeddings with the given
+    `SentenceTransformer`, saves the embedding matrix and document IDs to
+    `artifacts` folder, and optionally builds a FAISS index for fast search.
+    """
 
     #Build semantic embeddings for chunks.
     setup_logging()

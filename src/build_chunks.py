@@ -75,6 +75,13 @@ def build_chunks(
     overlap_words: int = 100,
     max_single: int = 550
 ):
+    """
+    Split each article in the corpus into overlapping, sentence-aware chunks.
+
+    Reads the article-level corpus from `bbc_corpus.csv`, uses sentence boundaries
+    to create chunks of roughly `target_words` tokens with `overlap_words`
+    overlap, and saves the chunked representation as JSONL to `bbc_chunks.jsonl`.
+    """
 
     #Build chunked corpus from CSV.
     setup_logging()

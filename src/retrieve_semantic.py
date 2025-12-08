@@ -1,3 +1,11 @@
+"""
+    Semantic retriever based on transformer embeddings and cosine similarity.
+
+    Loads precomputed dense embeddings (and optional FAISS index) along with
+    chunk IDs, then returns the top-k most similar documents for a query by
+    encoding the query and ranking by vector similarity.
+"""
+
 import json
 import numpy as np
 from pathlib import Path

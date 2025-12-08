@@ -9,7 +9,13 @@ except ImportError:
     raise ImportError("scikit-learn is not installed. Run: pip install scikit-learn")
 
 class TFIDFRetriever:
-    #TF-IDF based retrieval.
+    """
+    Lexical retriever based on TF-IDF vectors and cosine similarity.
+
+    Loads a precomputed TF-IDF model and document-term matrix and provides
+    a `search` method that returns the top-k most similar documents for
+    a given query string.
+    """
     
     def __init__(self, artifacts_dir: str):
         """Load TF-IDF artifacts."""
@@ -42,7 +48,12 @@ class TFIDFRetriever:
         return results
 
 class BM25Retriever:
-    #BM25 based retrieval.
+    """
+    Lexical retriever based on the BM25 ranking function.
+
+    Uses a tokenized corpus and BM25 scorer to retrieve documents that best
+    match a query, taking term frequency and document length into account.
+    """
     
     def __init__(self, artifacts_dir: str):
         #Load BM25 artifacts.

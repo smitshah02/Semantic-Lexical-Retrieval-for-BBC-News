@@ -1,3 +1,11 @@
+"""
+    Train lexical retrieval models (TF-IDF and BM25) from chunked documents.
+
+    Loads chunk texts from `bbc_chunks.jsonl`, fits a TF-IDF vectorizer and BM25
+    scorer over the corpus, and saves the models and document ID mappings
+    into `artifacts` folder for later retrieval.
+"""
+
 import argparse
 import logging
 import pickle
