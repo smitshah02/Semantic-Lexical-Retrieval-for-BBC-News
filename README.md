@@ -271,8 +271,8 @@ Each file contains docstrings and comments for clarity.
 
 Additional files:
 
-* `docs/API.md` — Retrieval API documentation
-* `docs/DATA.md` — Dataset & artifacts explanation
+* `docs/API.md` - Retrieval API documentation
+* `docs/DATA.md` - Dataset & artifacts explanation
 
 ---
 
