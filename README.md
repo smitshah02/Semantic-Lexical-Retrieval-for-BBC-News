@@ -14,7 +14,7 @@ All code is fully modularized, with each file handling a self-contained part of 
 
 ---
 
-# 🧱 1. Project Structure
+# 1. Project Structure
 
 ```
 Semantic-Lexical-Retrieval-for-News/
@@ -61,7 +61,7 @@ Semantic-Lexical-Retrieval-for-News/
 
 ---
 
-# ⚙️ 2. Installation
+# 2. Installation
 
 ## 2.1 Create a virtual environment
 
@@ -91,7 +91,7 @@ This installs:
 
 ---
 
-# 📦 3. Data Description
+# 3. Data Description
 
 ## 3.1 Raw BBC Dataset (`raw_data/bbc/`)
 
@@ -125,7 +125,7 @@ Used as input for the preprocessing pipeline.
 
 ---
 
-# 🔧 4. Build Pipeline
+# 4. Build Pipeline
 
 All build scripts live in `src/`.
 
@@ -168,7 +168,7 @@ python -m src.build_embeddings \
 
 ---
 
-# 🔍 5. Retrieval API
+# 5. Retrieval API
 
 ## TF-IDF & BM25 (src/retrieve_lexical.py)
 
@@ -205,7 +205,7 @@ results = hybrid.search("economic impact of climate change", k=5)
 
 ---
 
-# 📊 6. Evaluation
+# 6. Evaluation
 
 Evaluate retrieval performance using Precision@k, Recall@k, and nDCG@k:
 
@@ -222,7 +222,7 @@ Outputs a CSV under `artifacts/eval_results_*.csv`.
 
 ---
 
-# 🧪 7. Interactive Notebook Demo
+# 7. Interactive Notebook Demo
 
 The main user-facing interface is:
 
@@ -249,7 +249,7 @@ or open directly in VS Code.
 
 ---
 
-# 📘 8. Code Overview
+# 8. Code Overview
 
 | File                   | Purpose                                                              |
 | ---------------------- | -------------------------------------------------------------------- |
@@ -267,7 +267,7 @@ Each file contains docstrings and comments for clarity.
 
 ---
 
-# 📄 9. Documentation
+# 9. Documentation
 
 Additional files:
 
@@ -276,7 +276,7 @@ Additional files:
 
 ---
 
-# 🙌 10. Acknowledgements
+# 10. Acknowledgements
 
 * BBC dataset used for academic purposes
 * SentenceTransformers for semantic embedding models
